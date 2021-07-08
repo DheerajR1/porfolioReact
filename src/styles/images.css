@@ -5,23 +5,23 @@
 }
 /* Projects Photo */
 .project1{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+one');
+    background-image: url('../images/cryptoTracker.PNG');
     cursor: none;    
 }
 .project2{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+two');
+    background-image: url('../images/waypoint.PNG');
     cursor: none;
 }
 .project3{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+three');
+    background-image: url('../images/poke.PNG');
     cursor: none;
 }
 .project4{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+four');
+    background-image: url('../images/emoji.PNG');
     cursor: none;
 }
 .project5{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+five');
+    background-image: url('../images/apinode.png');
     cursor: none;
 }
 .project6{
@@ -30,14 +30,14 @@
 }
 /* Miscelaneous Activities photo */
 .misc1{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+one');
+    background-image: url('../images/animeList.PNG');
     cursor: none;
 }
 .misc2{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+two');
+    background-image: url('../images/java.png');
     cursor: none;
 }
 .misc3{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+three');
+    background-image: url('../images/minion.PNG');
     cursor: none;
 }

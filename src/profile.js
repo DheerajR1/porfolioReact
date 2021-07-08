@@ -55,9 +55,9 @@ const projects = [
   {
     // Add image in './styles/images.css' in #project1
     id: "project1",
-    name: "CryptoWebScrapper",
+    name: "Cryto-Currency tracker",
     skills: ["ReactJs, HTML, CSS, JS"],
-    url: "https://waypoint-optimizer.netlify.app/",
+    url: "https://trackcryp.netlify.app/",
   },
   {
     // Add image in './styles/images.css' in #project1
@@ -82,15 +82,13 @@ const projects = [
   },
   {
     // Add image in './styles/images.css' in #project5
-    id: "project6",
+    id: "project5",
     name: "Emoticon API",
     skills: ["NodeJs , JS"],
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/DheerajR1/emoticonList",
   },
 ];
-// Edit your Miscellaneous Activities, its name and the url.
-// You can omit freely anything if you dont have it
-// To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
+// Miscellaneous Activities: name and the url.
 const section4Title = "Miscellaneous";
 const miscellaneous = [
   {
@@ -122,9 +120,9 @@ const contact = {
 // respective social media link
 // Upload your resume in your drive, get the shaareable link and paste it in the resume section
 const social = {
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
-  resume: "https://novoresume.com/",
+  github: "https://github.com/DheerajR1",
+  linkedin: "https://www.linkedin.com/in/dheeraj-r-888810118/",
+  resume: "https://drive.google.com/uc?export=download&id=1CpNA11dA3wG0xbgBigdQo6Vkx97z5pCQ",
 };
 // Dont change anything here
 export {
