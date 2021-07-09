@@ -4,7 +4,7 @@
 
 <p align="center">
   <kbd>
-<img src="https://media.giphy.com/media/b5aE8kBXnpEaORruxu/giphy.gif"></img>
+<img src="https://media.giphy.com/media/d0aPhNLZ3BhUDUUps0/giphy.gif"></img>
   </kbd>
 </p>
 
