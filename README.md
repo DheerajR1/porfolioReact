@@ -24,7 +24,7 @@
 ✔️ Projects\
 ✔️ Miscellaneous activities\
 ✔️ Contact Form\
-✔️ Social Profile\
+✔️ Social Profile
 
 To view a live example, **[click here](https://rdheeraj.netlify.app/)**.
 
