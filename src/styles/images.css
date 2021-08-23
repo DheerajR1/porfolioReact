@@ -21,13 +21,14 @@
     cursor: none;
 }
 .project5{
-    background-image: url('../images/apinode.png');
+    background-image: url('../images/emoji.PNG');
     cursor: none;
 }
 .project6{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+six');
+    background-image: url('../images/apinode.png');
     cursor: none;
 }
+
 /* Miscelaneous Activities photo */
 .misc1{
     background-image: url('../images/animeList.PNG');
