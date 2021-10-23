@@ -60,14 +60,14 @@ const projects = [
     url: "https://trackcryp.netlify.app/",
   },
   {
-    // Add image in './styles/images.css' in #project1
+    // Add image in './styles/images.css' in #project2
     id: "project2",
     name: "Waypoint Optimizer",
     skills: ["HTML, CSS, JS"],
     url: "https://waypoint-optimizer.netlify.app/",
   },
   {
-    // Add image in './styles/images.css' in #project2
+    // Add image in './styles/images.css' in #project3
     id: "project3",
     name: "PokeDex",
     skills: ["HTML, CSS, JS"],
