@@ -145,5 +145,5 @@ export {
   section2title,
   section3Title,
   section4Title,
-  section5Title,
-};
+  section5Title,  
+};        
