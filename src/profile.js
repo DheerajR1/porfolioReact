@@ -53,6 +53,13 @@ const skillsBar = [
 const section3Title = "Past Projects";
 const projects = [
   {
+    // Add image in './styles/images.css' in #project4
+    id: "project4",
+    name: "TogetherBuddy",
+    skills: [" Next.js 14 (App Router), Prisma, PostgreSQL, Socket.IO, Redis, Web Crypto"],
+    url: "https://togetherbuddy.dev-dheeraj.com/",
+  },
+  {
     // Add image in './styles/images.css' in #project1
     id: "project1",
     name: "Cryto-Currency tracker",
@@ -72,27 +79,6 @@ const projects = [
     name: "PokeDex",
     skills: ["HTML, CSS, JS"],
     url: "https://pokeexplore.netlify.app/",
-  },
-  {
-    // Add image in './styles/images.css' in #project4
-    id: "project4",
-    name: "Weather App",
-    skills: [" HTML, CSS, JS"],
-    url: "https://get-weather-now.netlify.app/",
-  },
-  {
-    // Add image in './styles/images.css' in #project5
-    id: "project5",
-    name: "Emoji Dictionary",
-    skills: ["ReactJS, HTML, CSS, JS"],
-    url: "https://e3why.csb.app/#",
-  },
-  {
-    // Add image in './styles/images.css' in #project6
-    id: "project6",
-    name: "Emoticon API",
-    skills: ["NodeJs , JS"],
-    url: "https://github.com/DheerajR1/emoticonList",
   },
 ];
 // Miscellaneous Activities: name and the url.
