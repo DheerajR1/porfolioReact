@@ -6,7 +6,7 @@ const identity = {
   name: "Dheeraj Rangarao",
   first: "Dheeraj",
   role: "Senior AI/ML Engineer",
-  tagline: "LLM Systems · RAG · AI Evaluation Automation",
+  tagline: "LLM Systems · RAG · Applied AI Engineering",
   location: "Bengaluru, India",
   summary:
     "I build production AI end-to-end — multi-agent LLMs, RAG, and the evaluation infrastructure that keeps them honest at scale. 9+ years, now architecting Bixby & Galaxy AI evaluation at Samsung Research.",
@@ -78,7 +78,7 @@ const skillGroups = [
       "IndicTrans NMT · PaddleOCR",
       "Neo4j Knowledge Graph · SQL-RAG",
       "LLM Evaluation & Semantic Scoring",
-      "AI-Driven Test Automation",
+      "AI-Driven Evaluation Systems",
     ],
   },
   {
@@ -106,7 +106,7 @@ const skillGroups = [
     ],
   },
   {
-    title: "Automation & Data Pipelines",
+    title: "Data Engineering & Pipelines",
     icon: "fas fa-robot",
     items: [
       "Android UI Automation (UIAutomator)",
@@ -122,15 +122,15 @@ const skillGroups = [
 const experience = [
   {
     company: "Samsung Research Institute, Bangalore",
-    role: "Chief Engineer — AI Automation",
+    role: "Chief Engineer — AI/ML Engineering",
     period: "Aug 2021 – Present",
     current: true,
     points: [
-      "Architected B-UniQUE.ai — 4 specialized LLM agents automating Bixby tests from a single utterance (setup, navigation, verdict, multi-turn).",
-      "Added multimodal test execution, Bixby-vs-Gemini-vs-Perplexity benchmarking, and safety red-teaming.",
-      "Built the ASR/NMT evaluation framework: modified diff-match-patch + LaBSE + BLEU vs Google Translate.",
-      "Deployed production LLM serving (Qwen on vLLM) + local Ollama/Mistral + IndicTrans NMT for multilingual eval.",
-      "Architected multi-paradigm RAG (Vanilla, Hybrid, Neo4j KG, SQL-RAG) — report analysis from hours to minutes.",
+      "Architected B-UniQUE.ai — a multi-agent LLM framework (four specialized agents) that drives Bixby end-to-end from a single utterance: setup, navigation, verdict, and multi-turn dialogue.",
+      "Built multimodal execution, Bixby-vs-Gemini-vs-Perplexity benchmarking, and a safety red-teaming mode.",
+      "Engineered the ASR/NMT evaluation service: a modified diff-match-patch algorithm + LaBSE + BLEU scoring vs Google Translate.",
+      "Deployed production LLM serving (Qwen on vLLM) + local Ollama/Mistral + IndicTrans NMT for multilingual inference.",
+      "Architected a multi-paradigm RAG platform (Vanilla, Hybrid, Neo4j KG, SQL-RAG) — cut report analysis from hours to minutes.",
       "Authored 2 research papers (TechGlanz-24, -25).",
     ],
     awards: "1× Annual ACE · 3× Spot · 2× Quarterly ACE · 5× Team Awards",
