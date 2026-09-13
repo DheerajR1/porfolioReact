@@ -1,30 +1,36 @@
-import React, { useEffect } from "react";
-import Particles from "./components/layouts/Particles";
-import Header from "./components/section/Header";
+import React from "react";
+import Nav from "./components/section/Nav";
+import Hero from "./components/section/Hero";
 import About from "./components/section/About";
-import Works from "./components/section/Works";
+import Experience from "./components/section/Experience";
+import Projects from "./components/section/Projects";
+import Skills from "./components/section/Skills";
+import Hobbies from "./components/section/Hobbies";
+import Publications from "./components/section/Publications";
 import Contact from "./components/section/Contact";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { animation } from "./profile";
+import Companion from "./components/layouts/Companion";
+import useReveal from "./hooks/useReveal";
+import useTheme from "./hooks/useTheme";
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: animation.duration,
-      once: animation.once,
-      disable: !animation.animate,
-    });
-    // eslint-disable-next-line
-  }, []);
+  useReveal();
+  const [theme, toggleTheme] = useTheme();
 
   return (
     <div className="App">
-      <Header />
-      <Particles />
-      <About />
-      <Works />
-      <Contact />
+      <div className="bg-texture" aria-hidden="true" />
+      <Nav theme={theme} toggleTheme={toggleTheme} />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Hobbies />
+        <Publications />
+        <Contact />
+      </main>
+      <Companion />
     </div>
   );
 }

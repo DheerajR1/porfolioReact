@@ -1,30 +1,33 @@
-import React from 'react'
-import Skills from '../layouts/Skills'
-import { about, skillsBar, section2title } from '../../profile'
+import React from "react";
+import { about } from "../../profile";
+import SectionStage from "../layouts/SectionStage";
 
 const About = () => {
-    return (
-        <div id="about" className="effect2">
-            <div data-aos="zoom-in-up" data-aos-once="true" className="row">
-            <div className="col-12 d-none d-md-block offset-md-1 col-md-4 Photo" id="not-dark2"></div>
-            <div className="col-12 offset-md-1 col-md-6 about">
-                <div className="About-title-box">
-                <h1 id="About" className="red-line">{section2title}</h1>
-                </div>
-                <p className="lead about-text">
-                    {about.paragraph}  
-                </p>
-            </div>
-            </div>
-            <div id="Skills"> 
-                <div className="row d-flex justify-content-center skills">
-                    {skillsBar.map((x) => 
-                        <Skills faClass={x.faClass} label={x.name}/>
-                    )}
-                </div> 
-            </div>
-        </div>
-    )
-}
+  return (
+    <section id="about" className="section">
+      <div className="section__head" data-reveal>
+        <SectionStage variant="about" />
+        <span className="section__index">01</span>
+        <h2 className="section__title">About</h2>
+      </div>
 
-export default About
+      <div className="about">
+        <div className="about__body" data-reveal>
+          {about.paragraphs.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+        <ul className="about__highlights" data-reveal>
+          {about.highlights.map((h) => (
+            <li key={h}>
+              <i className="fas fa-check" />
+              {h}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+};
+
+export default About;

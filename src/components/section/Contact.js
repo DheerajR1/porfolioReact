@@ -1,48 +1,92 @@
-import React from 'react'
-import { contact, section5Title, social } from '../../profile'
+import React, { useState } from "react";
+import { contact, social, identity } from "../../profile";
+import SectionStage from "../layouts/SectionStage";
 
 const Contact = () => {
+  const [status, setStatus] = useState("idle"); // idle | sending | ok | error
 
-    return (
-        <div className="parallax">
-            <div data-aos="zoom-in-up" data-aos-once="true" className="git-form">
-                <>
-                    <div className="git-head-div text-center mx-auto">
-                        <h1 id="Contact" className="git-head">{section5Title}</h1>
-                    </div>
-                </>
-                <div className="container">
-                    <div className="git-cont row">
-                        <div className="col-12 col-sm-6 half">
-                            <form action={contact.contactUrl ? contact.contactUrl : "https://formspree.io"} method={contact.contactUrl ? "POST" : "GET"}>
-                                <input type="text" id="fname" name="firstname" placeholder="Your name" required></input>
-                                <input type="mail" id="mailid" name="Email" placeholder="Email Address" required></input>
-                                <input type="text" id="sub" name="Subject" placeholder="Subject" required></input>
-                                <textarea id="msg" name="message" placeholder="Message" required></textarea>
-                                <button style={{ cursor: 'pointer' }} type="submit">Send Message</button>
-                            </form>
-                        </div>
-                        <div className="col-12 col-sm-6 half">
-                            <p className="lead">
-                                {contact.pitch}
-                            </p>
-                            <div className="d-flex justify-content-center align-items-center flex-column">
-                                <div className="inline-block">
-                                    {social.linkedin && <a title="Visit Linkedin profile" rel="noopener noreferrer" target="_blank" href={social.linkedin}><i className="fab fa-linkedin"></i></a>}
-                                    {social.facebook && <a title="Visit Facebok profile" rel="noopener noreferrer" target="_blank" href={social.facebook}><i className="fab fa-facebook"></i></a>}
-                                    {social.instagram && <a title="Visit Instagram profile" rel="noopener noreferrer" target="_blank" href={social.instagram}><i className="fab fa-instagram"></i></a>}
-                                    {social.github && <a title="Visit Github profile" rel="noopener noreferrer" target="_blank" href={social.github}><i className="fab fa-github"></i></a>}<br />
-                                </div>
-                                {social.resume && <a title="Download Resume" href={social.resume} download><i className="fas fa-download"></i></a>}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p id="not-dark" className="Copy">2020 © Copyright <strong>{contact.copyright}</strong>. All Rights Reserved</p>
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    setStatus("sending");
+    try {
+      const res = await fetch(contact.contactUrl, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setStatus("ok");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  return (
+    <section id="contact" className="section">
+      <div className="section__head" data-reveal>
+        <SectionStage variant="contact" />
+        <span className="section__index">07</span>
+        <h2 className="section__title">Get in Touch</h2>
+      </div>
+
+      <div className="contact">
+        <div className="contact__pitch" data-reveal>
+          <p className="contact__lead">{contact.pitch}</p>
+          <a className="contact__email" href={social.email}>
+            <i className="fas fa-envelope" /> {contact.email}
+          </a>
+          <div className="contact__social">
+            <a href={social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i className="fab fa-github" />
+            </a>
+            <a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i className="fab fa-linkedin" />
+            </a>
+            <a href={social.resume} target="_blank" rel="noopener noreferrer" aria-label="Résumé">
+              <i className="fas fa-file-arrow-down" />
+            </a>
+          </div>
         </div>
-    )
 
-}
+        <form className="contact__form" onSubmit={onSubmit} data-reveal>
+          <div className="field">
+            <input type="text" name="name" placeholder="Your name" required />
+          </div>
+          <div className="field">
+            <input type="email" name="email" placeholder="Email address" required />
+          </div>
+          <div className="field">
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
+          <div className="field">
+            <textarea name="message" rows="4" placeholder="Message" required />
+          </div>
+          <button className="btn btn--primary" type="submit" disabled={status === "sending"}>
+            {status === "sending" ? "Sending…" : "Send Message"}
+            {status !== "sending" && <i className="fas fa-paper-plane" />}
+          </button>
+          {status === "ok" && <p className="form-note form-note--ok">Thanks — I'll get back to you soon.</p>}
+          {status === "error" && (
+            <p className="form-note form-note--err">
+              Something went wrong. Email me directly at {contact.email}.
+            </p>
+          )}
+        </form>
+      </div>
 
-export default Contact
+      <footer className="footer">
+        <span>
+          © {new Date().getFullYear()} {identity.name}
+        </span>
+        <span className="footer__built">Built with React</span>
+      </footer>
+    </section>
+  );
+};
+
+export default Contact;
