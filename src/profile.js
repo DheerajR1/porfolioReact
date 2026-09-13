@@ -6,7 +6,7 @@ const identity = {
   name: "Dheeraj Rangarao",
   first: "Dheeraj",
   role: "Senior AI/ML Engineer",
-  tagline: "LLM Systems · RAG · AI Evaluation Automation",
+  tagline: "LLM Systems · RAG · Applied AI Engineering",
   location: "Bengaluru, India",
   summary:
     "I build production AI end-to-end — multi-agent LLMs, RAG, and the evaluation infrastructure that keeps them honest at scale. 9+ years, now architecting Bixby & Galaxy AI evaluation at Samsung Research.",
@@ -78,7 +78,7 @@ const skillGroups = [
       "IndicTrans NMT · PaddleOCR",
       "Neo4j Knowledge Graph · SQL-RAG",
       "LLM Evaluation & Semantic Scoring",
-      "AI-Driven Test Automation",
+      "AI-Driven Evaluation Systems",
     ],
   },
   {
@@ -106,7 +106,7 @@ const skillGroups = [
     ],
   },
   {
-    title: "Automation & Data Pipelines",
+    title: "Data Engineering & Pipelines",
     icon: "fas fa-robot",
     items: [
       "Android UI Automation (UIAutomator)",
@@ -122,15 +122,15 @@ const skillGroups = [
 const experience = [
   {
     company: "Samsung Research Institute, Bangalore",
-    role: "Chief Engineer — AI Automation",
-    period: "Aug 2021 – Present",
+    role: "Chief Engineer — AI/ML Engineering",
+    period: "Aug 2021 - Present",
     current: true,
     points: [
-      "Architected B-UniQUE.ai — 4 specialized LLM agents automating Bixby tests from a single utterance (setup, navigation, verdict, multi-turn).",
-      "Added multimodal test execution, Bixby-vs-Gemini-vs-Perplexity benchmarking, and safety red-teaming.",
-      "Built the ASR/NMT evaluation framework: modified diff-match-patch + LaBSE + BLEU vs Google Translate.",
-      "Deployed production LLM serving (Qwen on vLLM) + local Ollama/Mistral + IndicTrans NMT for multilingual eval.",
-      "Architected multi-paradigm RAG (Vanilla, Hybrid, Neo4j KG, SQL-RAG) — report analysis from hours to minutes.",
+      "Architected B-UniQUE.ai — a multi-agent LLM framework (four specialized agents) that drives Bixby end-to-end from a single utterance: setup, navigation, verdict, and multi-turn dialogue.",
+      "Built multimodal execution, Bixby-vs-Gemini-vs-Perplexity benchmarking, and a safety red-teaming mode.",
+      "Engineered the ASR/NMT evaluation service: a modified diff-match-patch algorithm + LaBSE + BLEU scoring vs Google Translate.",
+      "Deployed production LLM serving (Qwen on vLLM) + local Ollama/Mistral + IndicTrans NMT for multilingual inference.",
+      "Architected a multi-paradigm RAG platform (Vanilla, Hybrid, Neo4j KG, SQL-RAG) — cut report analysis from hours to minutes.",
       "Authored 2 research papers (TechGlanz-24, -25).",
     ],
     awards: "1× Annual ACE · 3× Spot · 2× Quarterly ACE · 5× Team Awards",
@@ -138,7 +138,7 @@ const experience = [
   {
     company: "B2be.com",
     role: "Java Developer",
-    period: "Sep 2019 – Jul 2021",
+    period: "Sep 2019 - Jul 2021",
     points: [
       "Built an OCR-based data-extraction pipeline for ERP integration — converting vendor PDFs into structured data as an EDI gateway across heterogeneous ERP ecosystems.",
       "Built configurable extraction rules supporting multiple client ERP implementations, improving onboarding speed for new clients.",
@@ -147,7 +147,7 @@ const experience = [
   {
     company: "Samsung Research (via Access Automation Pvt. Ltd.)",
     role: "Test Engineer",
-    period: "Apr 2017 – Aug 2019",
+    period: "Apr 2017 - Aug 2019",
     points: [
       "Built a full-stack Java automation tool for Bixby testing with remote server-side evaluation via a web interface.",
       "Developed a full-stack internal app using Node.js and Electron for automation workflows.",
@@ -165,7 +165,7 @@ const projects = [
     tag: "Production · Samsung Research",
     blurb:
       "End-to-end ASR & NMT evaluation framework across 5+ Galaxy AI solutions (Live Translate, Interpreter, Dictation, Text Call, Voice Recorder), replacing manual review with standardized automated scoring for Hinglish / multilingual edge cases.",
-    metrics: ["173,999+ audio files", "+5–7% ASR quality", "4 locales", "Demoed to CTO"],
+    metrics: ["173,999+ audio files", "+5-7% ASR quality", "4 locales", "Demoed to CTO"],
     stack: ["Python", "diff-match-patch", "LaBSE", "BLEU", "UIAutomator", "Ollama"],
   },
   {
@@ -236,7 +236,7 @@ const hobbies = [
   },
   {
     title: "Trekking",
-    blurb: "Weekend trails and boulder country around Karnataka.",
+    blurb: "Weekend trails and boulder around.",
     image: "hobbies/trekking.jpg",
     url: INSTAGRAM,
   },
@@ -262,21 +262,21 @@ const publications = {
   education: {
     degree: "B.Tech, Computer Science",
     school: "Sri Krishna Institute of Technology",
-    period: "2013 – 2017",
+    period: "2013 - 2017",
   },
 };
 
 const contact = {
   pitch:
     "Open to conversations about LLM systems, RAG, AI evaluation, and agentic automation. Let's build something.",
-  email: "dheeraj30nov@gmail.com",
+  email: "dheerajr10ao@gmail.com",
   contactUrl: "https://formspree.io/f/xvodqebl",
 };
 
 const social = {
   github: "https://github.com/DheerajR1",
   linkedin: "https://www.linkedin.com/in/dheeraj-rangarao-888810118/",
-  email: "mailto:dheeraj30nov@gmail.com",
+  email: "mailto:dheerajr10ao@gmail.com",
   resume:
     "https://drive.google.com/uc?export=download&id=1CpNA11dA3wG0xbgBigdQo6Vkx97z5pCQ",
 };

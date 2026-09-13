@@ -1524,20 +1524,36 @@ main {
   }
   .hero__photo {
     order: -1;
+    display: grid;
+    grid-template-columns: auto max-content;
+    align-items: start;
+    justify-content: center;
+    column-gap: 4px;
     justify-self: center;
   }
   .hero__photo-frame {
+    grid-column: 1;
+    grid-row: 1;
     width: min(230px, 58vw);
   }
   .hero__photo-vtext {
-    display: block;
-    right: -30px;
-    top: 0;
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 2px;
     font-size: 1.35rem;
     letter-spacing: 0.06em;
   }
   .hero__photo::before {
-    inset: 12px -12px -12px 12px;
+    inset: 12px 18px -12px 12px;
+  }
+  .hero__photo-cap {
+    grid-column: 1 / -1;
+    margin-top: 12px;
+  }
+  .hero__photo-frame img,
+  .hobby__media img {
+    filter: grayscale(0) saturate(1.04) contrast(1.02);
   }
   .hero__stats {
     grid-template-columns: repeat(2, 1fr);
@@ -1580,7 +1596,22 @@ main {
     padding: 20px 20px 0px 20px;
   }
   .hero {
-    padding: 120px 20px 0;
+    padding: 92px 20px 0;
+  }
+  .hero__grid {
+    gap: 18px;
+  }
+  .hero__photo {
+    column-gap: 3px;
+  }
+  .hero__photo-frame {
+    width: min(230px, 60vw);
+  }
+  .hero__photo-vtext {
+    font-size: 1.24rem;
+  }
+  .hero__photo::before {
+    inset: 10px 16px -10px 10px;
   }
   .skills-grid {
     grid-template-columns: 1fr;
